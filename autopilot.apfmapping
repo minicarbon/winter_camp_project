@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cnn.h" path="E:\a20215972\hls\sdk0\src\cnn.h"/>
+    <originFiles name="top.cpp" path="E:\a20215972\hls\sdk0\src\top.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

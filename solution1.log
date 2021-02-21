@@ -1,0 +1,528 @@
+==============================================================
+File generated on Sat Oct 12 11:19:06 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_bind -effort=medium
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_schedule -effort=medium
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_schedule -relax_ii_for_timing=0
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'sdk0/src/top.cpp' ... 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: sdk0/src/top.cpp:73:21
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file sdk0/src/top.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 104.305 ; gain = 39.750
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 104.305 ; gain = 39.750
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:129).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:128).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:127).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:125).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:102).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::shift_pixels_up' into 'cnn' (sdk0/src/top.cpp:119).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::insert_bottom_row' into 'cnn' (sdk0/src/top.cpp:120).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::shift_pixels_left' into 'cnn' (sdk0/src/top.cpp:123).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:129).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:128).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:127).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:158).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:158).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:157).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:157).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:156).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:156).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:155).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:155).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:154).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:154).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:153).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:153).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:152).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:152).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:151).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:151).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:150).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:150).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:201).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:209).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:215).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::insert_bottom_row' into 'cnn' (sdk0/src/top.cpp:216).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::insert_bottom_row' into 'cnn' (sdk0/src/top.cpp:212).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::insert_bottom_row' into 'cnn' (sdk0/src/top.cpp:204).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 149.145 ; gain = 84.590
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 182.098 ; gain = 117.543
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'con_col' (sdk0/src/top.cpp:108) in function 'cnn' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.2.1.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'cnn' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.2.1.2' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:123) in function 'cnn' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.2.1.2.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:125) in function 'cnn' completely with a factor of 2.
+INFO: [XFORM 203-101] Partitioning array 'line_buf.val' (sdk0/src/top.cpp:64) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_line_buf.val' (sdk0/src/top.cpp:67) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'con_win.val' (sdk0/src/top.cpp:70) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weight_win.val' (sdk0/src/top.cpp:71) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'con_win.val' (sdk0/src/top.cpp:70) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'weight_win.val' (sdk0/src/top.cpp:71) in dimension 2 completely.
+INFO: [XFORM 203-721] Changing loop 'Loop_load_weight_proc' (sdk0/src/top.cpp:81) to a process function for dataflow in function 'cnn'.
+INFO: [XFORM 203-721] Changing loop 'Loop_4_proc' (sdk0/src/top.cpp:182) to a process function for dataflow in function 'cnn'.
+INFO: [XFORM 203-712] Applying dataflow to function 'cnn', detected/extracted 3 process function(s): 
+	 'Loop_load_weight_proc4'
+	 'Loop_2_proc5'
+	 'Loop_4_proc6'.
+WARNING: [XFORM 203-124] Array  'weights' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (sdk0/src/top.cpp:5:20) to (sdk0/src/top.cpp:5:53) in function 'active'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (sdk0/src/top.cpp:201:20) to (sdk0/src/top.cpp:205:4) in function 'Loop_4_proc6'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (sdk0/src/top.cpp:146:6) to (sdk0/src/top.cpp:171:6) in function 'Loop_2_proc5'... converting 3 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'max' into 'Loop_4_proc6' (sdk0/src/top.cpp:201) automatically.
+INFO: [XFORM 203-602] Inlining function 'active' into 'Loop_4_proc6' (sdk0/src/top.cpp:223) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 239.613 ; gain = 175.059
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (sdk0/src/top.cpp:182:15) in function 'Loop_4_proc6'.
+INFO: [XFORM 203-541] Flattening a loop nest 'con_row' (sdk0/src/top.cpp:107:47) in function 'Loop_2_proc5'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (sdk0/src/top.cpp:98:14) in function 'Loop_2_proc5' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'Loop_load_weight_proc4' to 'Loop_load_weight_pro' (sdk0/src/top.cpp:81:40)
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_line_buf.val[0]' (sdk0/src/top.cpp:67).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_line_buf.val[0]' (sdk0/src/top.cpp:67).
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'pool_line_buf.val[0]' (sdk0/src/top.cpp:67).
+INFO: [ANALYSIS 214-51] Found inter dependency for variable 'pool_line_buf.val[0]' (sdk0/src/top.cpp:67) (distance = 1).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buf.val[1]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buf.val[1]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buf.val[2]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buf.val[2]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buf.val[1]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buf.val[2]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'output_buf' (sdk0/src/top.cpp:46).
+WARNING: [XFORM 203-532] Unable to perform loop rewinding: Function 'Loop_2_proc5' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:46:17) contains multiple loops.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:31 . Memory (MB): peak = 268.887 ; gain = 204.332
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_load_weight_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 31.607 seconds; current allocated memory: 221.837 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.072 seconds; current allocated memory: 221.947 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_2_proc5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'con_row_con_col'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 27.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.417 seconds; current allocated memory: 222.856 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'output_buf' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'line_buf_val_1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'line_buf_val_2' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.287 seconds; current allocated memory: 223.836 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_4_proc6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:765->sdk0/src/top.cpp:212) of variable 'a', sdk0/src/top.cpp:3->sdk0/src/top.cpp:211 on array 'pool_line_buf.val[0]', sdk0/src/top.cpp:67 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'pool_line_buf_val_0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 14.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.463 seconds; current allocated memory: 224.550 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'pool_line_buf_val_0' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.225 seconds; current allocated memory: 225.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.273 seconds; current allocated memory: 225.471 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.452 seconds; current allocated memory: 225.805 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_load_weight_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_load_weight_pro'.
+INFO: [HLS 200-111]  Elapsed time: 0.293 seconds; current allocated memory: 226.170 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_2_proc5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Loop_2_proc5_output_buf' to 'Loop_2_proc5_outpbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Loop_2_proc5_line_buf_val_1' to 'Loop_2_proc5_linecud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Loop_2_proc5_line_buf_val_2' to 'Loop_2_proc5_linedEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fadd_32ns_32ns_32_5_full_dsp_1' to 'cnn_fadd_32ns_32neOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fmul_32ns_32ns_32_4_max_dsp_1' to 'cnn_fmul_32ns_32nfYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'cnn_fadd_32ns_32neOg': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fmul_32ns_32nfYi': 9 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_2_proc5'.
+INFO: [HLS 200-111]  Elapsed time: 0.215 seconds; current allocated memory: 228.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_4_proc6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Loop_4_proc6_pool_line_buf_val_0' to 'Loop_4_proc6_poolg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fptrunc_64ns_32_1_1' to 'cnn_fptrunc_64ns_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fpext_32ns_64_1_1' to 'cnn_fpext_32ns_64ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fcmp_32ns_32ns_1_1_1' to 'cnn_fcmp_32ns_32njbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_dmul_64ns_64ns_64_6_max_dsp_1' to 'cnn_dmul_64ns_64nkbM' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'cnn_dmul_64ns_64nkbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fcmp_32ns_32njbC': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fpext_32ns_64ibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fptrunc_64ns_hbi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_4_proc6'.
+INFO: [HLS 200-111]  Elapsed time: 0.996 seconds; current allocated memory: 230.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/strm_in_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/strm_out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/in_channel_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/in_width_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/pooling_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/weight_num_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/input_size_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cnn' to 's_axilite & ap_ctrl_hs' (register).
+INFO: [RTGEN 206-100] Bundling port 'return', 'in_channel_axi', 'in_width_axi', 'weight_num_axi' and 'input_size_axi' to AXI-Lite port BUS_A.
+INFO: [SYN 201-210] Renamed object name 'start_for_Loop_2_proc5_U0' to 'start_for_Loop_2_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Loop_4_proc6_U0' to 'start_for_Loop_4_mb6' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn'.
+INFO: [HLS 200-111]  Elapsed time: 1.038 seconds; current allocated memory: 230.857 MB.
+INFO: [RTMG 210-278] Implementing memory 'Loop_2_proc5_outpbkb_ram (RAM_2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Loop_2_proc5_linecud_ram (RAM_2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Loop_4_proc6_poolg8j_ram (RAM_2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'weights_channel_U(fifo_w32_d9220_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'photo_in_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'con_out_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_2_lbW_U(start_for_Loop_2_lbW)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_4_mb6_U(start_for_Loop_4_mb6)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:40 . Memory (MB): peak = 295.430 ; gain = 230.875
+INFO: [SYSC 207-301] Generating SystemC RTL for cnn.
+INFO: [VHDL 208-304] Generating VHDL RTL for cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for cnn.
+INFO: [HLS 200-112] Total elapsed time: 39.693 seconds; peak allocated memory: 230.857 MB.
+==============================================================
+File generated on Sat Oct 12 11:20:25 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_bind -effort=medium
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_schedule -enable_dsp_full_reg=0
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'sdk0/src/top.cpp' ... 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: sdk0/src/top.cpp:73:21
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file sdk0/src/top.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 184.625 ; gain = 92.930
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 184.625 ; gain = 92.930
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:129).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:128).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:127).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:125).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::insert_pixel' into 'cnn' (sdk0/src/top.cpp:102).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::shift_pixels_up' into 'cnn' (sdk0/src/top.cpp:119).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::insert_bottom_row' into 'cnn' (sdk0/src/top.cpp:120).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::shift_pixels_left' into 'cnn' (sdk0/src/top.cpp:123).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:129).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:128).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 210, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:127).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:158).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:158).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:157).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:157).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:156).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:156).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:155).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:155).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:154).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:154).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:153).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:153).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:152).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:152).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:151).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:151).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:150).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, float>::getval' into 'cnn' (sdk0/src/top.cpp:150).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:201).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:209).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::getval' into 'cnn' (sdk0/src/top.cpp:215).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::insert_bottom_row' into 'cnn' (sdk0/src/top.cpp:216).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::insert_bottom_row' into 'cnn' (sdk0/src/top.cpp:212).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 104, float, 0>::insert_bottom_row' into 'cnn' (sdk0/src/top.cpp:204).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 189.699 ; gain = 98.004
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:36 . Memory (MB): peak = 226.180 ; gain = 134.484
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'con_col' (sdk0/src/top.cpp:108) in function 'cnn' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.2.1.1' (E:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'cnn' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.2.1.2' (E:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:123) in function 'cnn' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.2.1.2.1' (E:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:125) in function 'cnn' completely with a factor of 2.
+INFO: [XFORM 203-101] Partitioning array 'line_buf.val' (sdk0/src/top.cpp:64) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pool_line_buf.val' (sdk0/src/top.cpp:67) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'con_win.val' (sdk0/src/top.cpp:70) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weight_win.val' (sdk0/src/top.cpp:71) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'con_win.val' (sdk0/src/top.cpp:70) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'weight_win.val' (sdk0/src/top.cpp:71) in dimension 2 completely.
+INFO: [XFORM 203-721] Changing loop 'Loop_load_weight_proc' (sdk0/src/top.cpp:81) to a process function for dataflow in function 'cnn'.
+INFO: [XFORM 203-721] Changing loop 'Loop_4_proc' (sdk0/src/top.cpp:182) to a process function for dataflow in function 'cnn'.
+INFO: [XFORM 203-712] Applying dataflow to function 'cnn', detected/extracted 3 process function(s): 
+	 'Loop_load_weight_proc4'
+	 'Loop_2_proc5'
+	 'Loop_4_proc6'.
+WARNING: [XFORM 203-124] Array  'weights' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (sdk0/src/top.cpp:5:20) to (sdk0/src/top.cpp:5:53) in function 'active'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (sdk0/src/top.cpp:201:20) to (sdk0/src/top.cpp:205:4) in function 'Loop_4_proc6'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (sdk0/src/top.cpp:146:6) to (sdk0/src/top.cpp:171:6) in function 'Loop_2_proc5'... converting 3 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'max' into 'Loop_4_proc6' (sdk0/src/top.cpp:201) automatically.
+INFO: [XFORM 203-602] Inlining function 'active' into 'Loop_4_proc6' (sdk0/src/top.cpp:223) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'Loop_2_proc5' (sdk0/src/top.cpp:46:5)...17 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:37 . Memory (MB): peak = 282.039 ; gain = 190.344
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (sdk0/src/top.cpp:182:15) in function 'Loop_4_proc6'.
+INFO: [XFORM 203-541] Flattening a loop nest 'con_row' (sdk0/src/top.cpp:107:47) in function 'Loop_2_proc5'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (sdk0/src/top.cpp:98:14) in function 'Loop_2_proc5' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'Loop_load_weight_proc4' to 'Loop_load_weight_pro' (sdk0/src/top.cpp:81:40)
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_line_buf.val[0]' (sdk0/src/top.cpp:67).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_line_buf.val[0]' (sdk0/src/top.cpp:67).
+INFO: [ANALYSIS 214-51] Found intra dependency for variable 'pool_line_buf.val[0]' (sdk0/src/top.cpp:67).
+INFO: [ANALYSIS 214-51] Found inter dependency for variable 'pool_line_buf.val[0]' (sdk0/src/top.cpp:67) (distance = 1).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buf.val[1]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buf.val[1]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buf.val[2]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable ''.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buf.val[2]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buf.val[1]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buf.val[2]' (sdk0/src/top.cpp:64).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'output_buf' (sdk0/src/top.cpp:46).
+WARNING: [XFORM 203-532] Unable to perform loop rewinding: Function 'Loop_2_proc5' (sdk0/src/top.cpp:46:5) contains multiple loops.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:38 . Memory (MB): peak = 313.742 ; gain = 222.047
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_load_weight_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 38.597 seconds; current allocated memory: 256.150 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.203 seconds; current allocated memory: 256.276 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_2_proc5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'con_row_con_col'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 21.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.504 seconds; current allocated memory: 257.050 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'output_buf' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'line_buf_val_1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'line_buf_val_2' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.412 seconds; current allocated memory: 257.968 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_4_proc6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('pool_line_buf_val_0_5_write_ln765', E:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->sdk0/src/top.cpp:212) of variable 'a', sdk0/src/top.cpp:3->sdk0/src/top.cpp:211 on array 'pool_line_buf.val[0]', sdk0/src/top.cpp:67 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'pool_line_buf_val_0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 14.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.602 seconds; current allocated memory: 258.416 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'pool_line_buf_val_0' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.257 seconds; current allocated memory: 258.956 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.306 seconds; current allocated memory: 259.105 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.415 seconds; current allocated memory: 259.408 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_load_weight_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_load_weight_pro'.
+INFO: [HLS 200-111]  Elapsed time: 0.354 seconds; current allocated memory: 259.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_2_proc5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Loop_2_proc5_output_buf' to 'Loop_2_proc5_outpbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Loop_2_proc5_line_buf_val_1' to 'Loop_2_proc5_linecud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Loop_2_proc5_line_buf_val_2' to 'Loop_2_proc5_linedEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fadd_32ns_32ns_32_4_full_dsp_1' to 'cnn_fadd_32ns_32neOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fmul_32ns_32ns_32_3_max_dsp_1' to 'cnn_fmul_32ns_32nfYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'cnn_fadd_32ns_32neOg': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fmul_32ns_32nfYi': 9 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_2_proc5'.
+INFO: [HLS 200-111]  Elapsed time: 0.395 seconds; current allocated memory: 261.618 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_4_proc6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Loop_4_proc6_pool_line_buf_val_0' to 'Loop_4_proc6_poolg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fptrunc_64ns_32_2_1' to 'cnn_fptrunc_64ns_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fpext_32ns_64_2_1' to 'cnn_fpext_32ns_64ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_fcmp_32ns_32ns_1_2_1' to 'cnn_fcmp_32ns_32njbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'cnn_dmul_64ns_64ns_64_5_max_dsp_1' to 'cnn_dmul_64ns_64nkbM' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'cnn_dmul_64ns_64nkbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fcmp_32ns_32njbC': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fpext_32ns_64ibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'cnn_fptrunc_64ns_hbi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_4_proc6'.
+INFO: [HLS 200-111]  Elapsed time: 1.301 seconds; current allocated memory: 263.172 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/strm_in_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/strm_out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/in_channel_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/in_width_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/pooling_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/weight_num_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/input_size_axi' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cnn' to 's_axilite & ap_ctrl_hs' (register).
+INFO: [RTGEN 206-100] Bundling port 'return', 'in_channel_axi', 'in_width_axi', 'weight_num_axi' and 'input_size_axi' to AXI-Lite port BUS_A.
+INFO: [SYN 201-210] Renamed object name 'start_for_Loop_2_proc5_U0' to 'start_for_Loop_2_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Loop_4_proc6_U0' to 'start_for_Loop_4_mb6' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn'.
+INFO: [HLS 200-111]  Elapsed time: 1.056 seconds; current allocated memory: 263.850 MB.
+INFO: [RTMG 210-278] Implementing memory 'Loop_2_proc5_outpbkb_ram (RAM_2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Loop_2_proc5_linecud_ram (RAM_2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Loop_4_proc6_poolg8j_ram (RAM_2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'weights_channel_U(fifo_w32_d9220_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'photo_in_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'con_out_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_2_lbW_U(start_for_Loop_2_lbW)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_4_mb6_U(start_for_Loop_4_mb6)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:49 . Memory (MB): peak = 339.074 ; gain = 247.379
+INFO: [VHDL 208-304] Generating VHDL RTL for cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for cnn.
+INFO: [HLS 200-112] Total elapsed time: 49.409 seconds; peak allocated memory: 263.850 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
