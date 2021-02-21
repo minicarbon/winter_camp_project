@@ -1,0 +1,871 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 28 10:39:12 2019
+# Process ID: 48908
+# Current directory: C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog
+# Command line: vivado.exe -notrace -mode batch -source run_vivadosyn.tcl
+# Log file: C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/vivado.log
+# Journal file: C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog\vivado.jou
+#-----------------------------------------------------------
+source run_vivadosyn.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+Wrote  : <C:\Users\guoy\Desktop\hls\yolo_ip\solution1\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+Slave segment </hls_inst/s_axi_BUS_A/Reg> is being mapped into address space </s_axi_BUS_A> at <0x0000_0000 [ 4K ]>
+INFO: [#UNDEF] Changing parameter ADDR_WIDTH on bus interface /s_axi_BUS_A from 6 to 12 due to existing assignment(s) on address space /s_axi_BUS_A.
+Wrote  : <C:\Users\guoy\Desktop\hls\yolo_ip\solution1\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+VHDL Output written to : C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/synth/bd_0.v
+VHDL Output written to : C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/sim/bd_0.v
+VHDL Output written to : C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+Using BD top: bd_0_wrapper
+INFO: [BD 41-1662] The design 'bd_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/synth/bd_0.v
+VHDL Output written to : C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/sim/bd_0.v
+VHDL Output written to : C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+WARNING: [IP_Flow 19-519] IP 'bd_0_hls_inst_0' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
+Exporting to file C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
+Generated Block Design Tcl file C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hw_handoff/bd_0_bd.tcl
+Generated Hardware Definition File C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/synth/bd_0.hwdef
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 592.125 ; gain = 56.039
+[Thu Nov 28 10:39:31 2019] Launched bd_0_hls_inst_0_synth_1...
+Run output will be captured here: C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
+[Thu Nov 28 10:39:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.runs/synth_1/runme.log
+[Thu Nov 28 10:39:31 2019] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log bd_0_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top bd_0_wrapper -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 46724 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 895.738 ; gain = 177.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_wrapper' [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'bd_0' [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.runs/synth_1/.Xil/Vivado-47392-guoy-PC/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (1#1) [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.runs/synth_1/.Xil/Vivado-47392-guoy-PC/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0' (2#1) [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_wrapper' (3#1) [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 961.590 ; gain = 243.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 961.590 ; gain = 243.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 961.590 ; gain = 243.273
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Finished Parsing XDC File [c:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Parsing XDC File [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/cnn.xdc]
+Finished Parsing XDC File [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/cnn.xdc]
+Parsing XDC File [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1011.156 ; gain = 11.703
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1011.156 ; gain = 292.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1011.156 ; gain = 292.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for bd_0_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bd_0_i/hls_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1011.156 ; gain = 292.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1011.156 ; gain = 292.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1011.156 ; gain = 292.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.414 ; gain = 331.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.488 ; gain = 331.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1059.277 ; gain = 340.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1075.074 ; gain = 356.758
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1075.074 ; gain = 356.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1075.074 ; gain = 356.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1075.074 ; gain = 356.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1075.074 ; gain = 356.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1075.074 ; gain = 356.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |bd_0_hls_inst_0 |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |bd_0_hls_inst_0 |     1|
++------+----------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    76|
+|2     |  bd_0_i |bd_0   |    76|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1075.074 ; gain = 356.758
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1075.074 ; gain = 307.191
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1075.074 ; gain = 356.758
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1101.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1101.238 ; gain = 716.418
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1101.238 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_wrapper_utilization_synth.rpt -pb bd_0_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 10:43:19 2019...
+[Thu Nov 28 10:43:23 2019] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:03:52 . Memory (MB): peak = 594.273 ; gain = 0.000
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z045ffg900-2
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.dcp' for cell 'bd_0_i/hls_inst'
+INFO: [Netlist 29-17] Analyzing 669 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/cnn.xdc] for cell 'bd_0_i/hls_inst/inst'
+Finished Parsing XDC File [c:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/cnn.xdc] for cell 'bd_0_i/hls_inst/inst'
+Parsing XDC File [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/cnn.xdc]
+Finished Parsing XDC File [C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/verilog/cnn.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1032.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.000 ; gain = 437.727
+Running report: report_utilization -file ./report/cnn_utilization_synth.rpt
+Contents of report file './report/cnn_utilization_synth.rpt' is as follows:
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Nov 28 10:43:38 2019
+| Host         : guoy-PC running 64-bit major release  (build 9200)
+| Command      : report_utilization -file ./report/cnn_utilization_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z045ffg900-2
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Memory
+3. DSP
+4. IO and GT Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Fixed | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| Slice LUTs*                | 5840 |     0 |    218600 |  2.67 |
+|   LUT as Logic             | 5691 |     0 |    218600 |  2.60 |
+|   LUT as Memory            |  149 |     0 |     70400 |  0.21 |
+|     LUT as Distributed RAM |    0 |     0 |           |       |
+|     LUT as Shift Register  |  149 |     0 |           |       |
+| Slice Registers            | 7464 |     0 |    437200 |  1.71 |
+|   Register as Flip Flop    | 7464 |     0 |    437200 |  1.71 |
+|   Register as Latch        |    0 |     0 |    437200 |  0.00 |
+| F7 Muxes                   |    0 |     0 |    109300 |  0.00 |
+| F8 Muxes                   |    0 |     0 |     54650 |  0.00 |
++----------------------------+------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 12    |          Yes |         Set |            - |
+| 7452  |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Memory
+---------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |   82 |     0 |       545 | 15.05 |
+|   RAMB36/FIFO*    |   81 |     0 |       545 | 14.86 |
+|     RAMB36E1 only |   81 |       |           |       |
+|   RAMB18          |    2 |     0 |      1090 |  0.18 |
+|     RAMB18E1 only |    2 |       |           |       |
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |   65 |     0 |       900 |  7.22 |
+|   DSP48E1 only |   65 |       |           |       |
++----------------+------+-------+-----------+-------+
+
+
+4. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |    0 |     0 |       362 |  0.00 |
+| Bonded IPADs                |    0 |     0 |        50 |  0.00 |
+| Bonded OPADs                |    0 |     0 |        32 |  0.00 |
+| Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |         8 |  0.00 |
+| PHASER_REF                  |    0 |     0 |         8 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        32 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        32 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |         8 |  0.00 |
+| IBUFDS                      |    0 |     0 |       348 |  0.00 |
+| GTXE2_COMMON                |    0 |     0 |         4 |  0.00 |
+| GTXE2_CHANNEL               |    0 |     0 |        16 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        32 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        32 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       400 |  0.00 |
+| ODELAYE2/ODELAYE2_FINEDELAY |    0 |     0 |       150 |  0.00 |
+| IBUFDS_GTE2                 |    0 |     0 |         8 |  0.00 |
+| ILOGIC                      |    0 |     0 |       362 |  0.00 |
+| OLOGIC                      |    0 |     0 |       362 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+5. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    0 |     0 |        32 |  0.00 |
+| BUFIO      |    0 |     0 |        32 |  0.00 |
+| MMCME2_ADV |    0 |     0 |         8 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |         8 |  0.00 |
+| BUFMRCE    |    0 |     0 |        16 |  0.00 |
+| BUFHCE     |    0 |     0 |       168 |  0.00 |
+| BUFR       |    0 |     0 |        32 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+6. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| PCIE_2_1    |    0 |     0 |         1 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+7. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     | 7452 |        Flop & Latch |
+| LUT3     | 1977 |                 LUT |
+| LUT6     | 1666 |                 LUT |
+| LUT5     | 1300 |                 LUT |
+| LUT4     | 1242 |                 LUT |
+| CARRY4   |  521 |          CarryLogic |
+| LUT2     |  518 |                 LUT |
+| SRL16E   |  148 |  Distributed Memory |
+| LUT1     |  113 |                 LUT |
+| RAMB36E1 |   81 |        Block Memory |
+| DSP48E1  |   65 |    Block Arithmetic |
+| FDSE     |   12 |        Flop & Latch |
+| RAMB18E1 |    2 |        Block Memory |
+| SRLC32E  |    1 |  Distributed Memory |
++----------+------+---------------------+
+
+
+8. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+9. Instantiated Netlists
+------------------------
+
++-----------------+------+
+|     Ref Name    | Used |
++-----------------+------+
+| bd_0_hls_inst_0 |    1 |
++-----------------+------+
+
+
+
+Running report: report_timing_summary -file ./report/cnn_timing_synth.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1678.195 ; gain = 646.195
+Contents of report file './report/cnn_timing_synth.rpt' is as follows:
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Nov 28 10:43:56 2019
+| Host         : guoy-PC running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file ./report/cnn_timing_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z045-ffg900
+| Speed File   : -2  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 88 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 72 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      3.073        0.000                      0                18946        0.118        0.000                      0                18946        4.358        0.000                       0                  7783  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock   Waveform(ns)       Period(ns)      Frequency(MHz)
+-----   ------------       ----------      --------------
+ap_clk  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+ap_clk              3.073        0.000                      0                18946        0.118        0.000                      0                18946        4.358        0.000                       0                  7783  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  ap_clk
+  To Clock:  ap_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        3.073ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.118ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.358ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.073ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/din0_buf1_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/RESULT_REG.NORMAL.exp_op_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.908ns  (logic 5.580ns (80.777%)  route 1.328ns (19.223%))
+  Logic Levels:           5  (DSP48E1=3 LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 10.510 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7835, unset)         0.537     0.537    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/din0_buf1_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.236     0.773 r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/din0_buf1_reg[22]/Q
+                         net (fo=2, unplaced)         0.419     1.192    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/s_axis_a_tdata[22]
+                         DSP48E1 (Prop_dsp48e1_A[22]_PCOUT[47])
+                                                      2.962     4.154 r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/PCOUT[47]
+                         net (fo=1, unplaced)         0.050     4.204    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/PCOUT[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.219     5.423 r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/PCOUT[47]
+                         net (fo=1, unplaced)         0.000     5.423    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/RESULT_CASC[47]
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[30])
+                                                      1.077     6.500 r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/P[30]
+                         net (fo=3, unplaced)         0.419     6.920    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/RESULT_REG.NORMAL.exp_op_reg[7][23]
+                         LUT4 (Prop_lut4_I1_O)        0.043     6.963 r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/RESULT_REG.NORMAL.exp_op[7]_i_8/O
+                         net (fo=6, unplaced)         0.439     7.402    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/round_exp_inc_op
+                         LUT5 (Prop_lut5_I1_O)        0.043     7.445 r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/RESULT_REG.NORMAL.exp_op[7]_i_2/O
+                         net (fo=1, unplaced)         0.000     7.445    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/RESULT_REG.NORMAL.exp_op_reg[7]_0
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/RESULT_REG.NORMAL.exp_op_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=7835, unset)         0.510    10.510    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/aclk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/RESULT_REG.NORMAL.exp_op_reg[7]/C
+                         clock pessimism              0.000    10.510    
+                         clock uncertainty           -0.035    10.475    
+                         FDRE (Setup_fdre_C_D)        0.043    10.518    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/cnn_fmul_32ns_32nfYi_U23/cnn_ap_fmul_1_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/RESULT_REG.NORMAL.exp_op_reg[7]
+  -------------------------------------------------------------------
+                         required time                         10.518    
+                         arrival time                          -7.445    
+  -------------------------------------------------------------------
+                         slack                                  3.073    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.118ns  (arrival time - required time)
+  Source:                 bd_0_i/hls_inst/inst/Loop_2_proc5_U0/output_buf_addr_1_reg_1300_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/Loop_2_proc5_U0/output_buf_addr_1_reg_1300_pp0_iter18_reg_reg[0]_srl16/D
+                            (rising edge-triggered cell SRL16E clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        0.198ns  (logic 0.104ns (52.598%)  route 0.094ns (47.402%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.266ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7835, unset)         0.266     0.266    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/output_buf_addr_1_reg_1300_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.104     0.370 r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/output_buf_addr_1_reg_1300_reg[0]/Q
+                         net (fo=1, unplaced)         0.094     0.464    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/output_buf_addr_1_reg_1300[0]
+                         SRL16E                                       r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/output_buf_addr_1_reg_1300_pp0_iter18_reg_reg[0]_srl16/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=7835, unset)         0.280     0.280    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/ap_clk
+                         SRL16E                                       r  bd_0_i/hls_inst/inst/Loop_2_proc5_U0/output_buf_addr_1_reg_1300_pp0_iter18_reg_reg[0]_srl16/CLK
+                         clock pessimism              0.000     0.280    
+                         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.066     0.346    bd_0_i/hls_inst/inst/Loop_2_proc5_U0/output_buf_addr_1_reg_1300_pp0_iter18_reg_reg[0]_srl16
+  -------------------------------------------------------------------
+                         required time                         -0.346    
+                         arrival time                           0.464    
+  -------------------------------------------------------------------
+                         slack                                  0.118    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         ap_clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { ap_clk }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     DSP48E1/CLK  n/a            2.772         10.000      7.228                bd_0_i/hls_inst/inst/Loop_2_proc5_U0/mul_ln149_reg_1290_reg/CLK
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.642         5.000       4.358                bd_0_i/hls_inst/inst/Loop_2_proc5_U0/and_ln132_reg_1209_pp0_iter13_reg_reg[0]_srl3/CLK
+High Pulse Width  Slow    SRL16E/CLK   n/a            0.642         5.000       4.358                bd_0_i/hls_inst/inst/Loop_2_proc5_U0/and_ln132_reg_1209_pp0_iter13_reg_reg[0]_srl3/CLK
+
+
+
+
+HLS EXTRACTION: calculating BRAM count: (2 bram18) + 2 * (81 bram36)
+HLS EXTRACTION: synth area_totals:  0 218600 437200 900 1090 0 0
+HLS EXTRACTION: synth area_current: 0 5840 7464 65 164 0 149 0 0 0
+HLS EXTRACTION: generated C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/report/verilog/cnn_export.xml
+
+
+Implementation tool: Xilinx Vivado v.2019.1
+Project:             yolo_ip
+Solution:            solution1
+Device target:       xc7z045-ffg900-2
+Report date:         Thu Nov 28 10:43:56 +0800 2019
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:           5840
+FF:            7464
+DSP:             65
+BRAM:           164
+SRL:            149
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    6.927
+Timing met
+
+HLS EXTRACTION: generated C:/Users/guoy/Desktop/hls/yolo_ip/solution1/impl/report/verilog/cnn_export.rpt
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 10:43:56 2019...
